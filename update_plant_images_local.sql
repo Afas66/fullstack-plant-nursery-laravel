@@ -14,6 +14,8 @@ UPDATE plants SET image = 'plants/Basil.jpg' WHERE name = 'Basil';
 UPDATE plants SET image = 'plants/Rosemary.jpeg' WHERE name = 'Rosemary';
 UPDATE plants SET image = 'plants/Hostas.jpeg' WHERE name = 'Hostas';
 UPDATE plants SET image = 'plants/Lavender.jpg' WHERE name = 'Lavender';
+UPDATE plants SET image = 'plants/jas.jpg' WHERE name = 'jas';
+
 
 -- Verify the updates
 SELECT name, image FROM plants WHERE image IS NOT NULL;

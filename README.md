@@ -1,66 +1,151 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Greenthumb Nursery | グリーンサム・ナーセリー
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php )
+![Laravel](https://img.shields.io/badge/Laravel-10.x-FF2D20?style=for-the-badge&logo=laravel )
+![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql )
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?style=for-the-badge&logo=tailwindcss )
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript )
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### 🇬🇧 English
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Greenthumb Nursery is a full-stack web application designed to manage the inventory, sales, and customer data for a plant nursery. This project demonstrates a robust backend built with Laravel and a modern, responsive frontend using Tailwind CSS. It showcases best practices in web development, from database design to user authentication.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🇯🇵 日本語
 
-## Learning Laravel
+グリーンサム・ナーセリーは、植物園の在庫、販売、顧客データを管理するために設計されたフルスタックのWebアプリケーションです。このプロジェクトは、Laravelで構築された堅牢なバックエンドと、Tailwind CSSを使用したモダンでレスポンシブなフロントエンドを特徴としています。データベース設計からユーザー認証まで、Web開発におけるベストプラクティスを実証しています。
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ✨ Key Features | 主な機能
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-   **Product Management:** Full CRUD (Create, Read, Update, Delete) functionality for plant inventory.
+-   **User Authentication:** Secure user registration and login system using Laravel Breeze/Fortify.
+-   **Responsive UI:** A clean and modern user interface built with Tailwind CSS that works on all devices.
+-   **Database Management:** Efficient data handling with Eloquent ORM and database migrations.
+-   **SQL Scripts:** Includes SQL files for initial database setup and sample data.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## DEMO
+<video controls src="public/assets/demo/post.mp4" title="Title"></video>
 
-### Premium Partners
+## 🚀 Getting Started | インストール方法
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 🇬🇧 English
 
-## Contributing
+Follow these steps to get the project running on your local machine.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**Prerequisites:**
+- PHP >= 8.1
+- Composer
+- Node.js & NPM
+- MySQL
 
-## Code of Conduct
+**Installation:**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/greenthumb-nursery-1.git
+    cd greenthumb-nursery-1
+    ```
 
-## Security Vulnerabilities
+2.  **Install dependencies:**
+    ```bash
+    composer install
+    npm install
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3.  **Set up the environment file:**
+    ```bash
+    cp .env.example .env
+    ```
+    *Then, open the `.env` file and configure your database credentials (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` ).*
 
-## License
+4.  **Generate application key:**
+    ```bash
+    php artisan key:generate
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5.  **Run database migrations and seeders:**
+    *This will create the necessary tables and populate them with initial data.*
+    ```bash
+    php artisan migrate --seed
+    ```
+    *(Alternatively, you can import the `greenthumb_nursery.sql` file manually.)*
+
+6.  **Compile assets:**
+    ```bash
+    npm run dev
+    ```
+
+7.  **Start the development server:**
+    ```bash
+    php artisan serve
+    ```
+    The application will be available at `http://127.0.0.1:8000`.
+
+### 🇯🇵 日本語
+
+ローカルマシンでプロジェクトを起動するための手順です 。
+
+**前提条件:**
+- PHP >= 8.1
+- Composer
+- Node.js & NPM
+- MySQL
+
+**インストール:**
+
+1.  **リポジトリをクローンします:**
+    ```bash
+    git clone https://github.com/your-username/greenthumb-nursery-1.git
+    cd greenthumb-nursery-1
+    ```
+
+2.  **依存関係をインストールします:**
+    ```bash
+    composer install
+    npm install
+    ```
+
+3.  **環境ファイルを設定します:**
+    ```bash
+    cp .env.example .env
+    ```
+    *その後、`.env`ファイルを開き、データベース情報（`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` ）を設定してください。*
+
+4.  **アプリケーションキーを生成します:**
+    ```bash
+    php artisan key:generate
+    ```
+
+5.  **データベースのマイグレーションとシーディングを実行します:**
+    *これにより、必要なテーブルが作成され、初期データが投入されます。*
+    ```bash
+    php artisan migrate --seed
+    ```
+    *（または、`greenthumb_nursery.sql`ファイルを手動でインポートすることも可能です。）*
+
+6.  **アセットをコンパイルします:**
+    ```bash
+    npm run dev
+    ```
+
+7.  **開発サーバーを起動します:**
+    ```bash
+    php artisan serve
+    ```
+    アプリケーションは `http://127.0.0.1:8000` で利用可能になります 。
+
+---
+
+## 🗃️ Database Schema | データベース設計
+
+A visual representation of the database schema is available below. This illustrates the relationships between the `users`, `products`, and `orders` tables.
+
+*(It's a great idea to create an ERD and link the image here. This shows strong backend planning skills.)*
+
+[View Database ERD](docs/er-diagram.drawio.png)
+

@@ -31,6 +31,11 @@
                             <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.*')">
                                 {{ __('Admin') }}
                             </x-nav-link>
+
+                            <x-nav-link :href="route('admin.orders.index')" :active="request()->routeIs('admin.orders.*')">
+                                  {{ __('Manage Orders') }}
+                            </x-nav-link>
+
                         @endif
                     @endauth
                 </div>

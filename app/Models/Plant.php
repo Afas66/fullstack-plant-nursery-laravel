@@ -39,12 +39,14 @@ class Plant extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function orders()
+        /**
+     * A plant can have many order items.
+     */
+    public function orderItems()
     {
-        return $this->belongsToMany(Order::class, 'order_items')
-                    ->withPivot('quantity', 'subtotal')
-                    ->withTimestamps();
+        return $this->hasMany(OrderItem::class);
     }
+
 
     public function decreaseStock($quantity)
     {
@@ -60,14 +62,17 @@ class Plant extends Model
         $this->increment('stock_quantity', $quantity);
     }
 
-    // Accessor for image_url
+        // Accessor for image_url
     public function getImageUrlAttribute(): string
     {
         if ($this->image) {
-            return asset($this->image);
+            // Use Storage::url() for images stored in storage/app/public
+            return \Illuminate\Support\Facades\Storage::url($this->image);
         }
-        return asset('assets/images/placeholders/no_image.jpeg');
+        // Fallback for no image, assuming this path is in public directory
+        return asset("assets/images/placeholders/no_image.jpeg");
     }
+
 
     // Scopes
     public function scopeActive(Builder $query): void

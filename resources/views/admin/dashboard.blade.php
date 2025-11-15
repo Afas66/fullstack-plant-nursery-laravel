@@ -95,21 +95,29 @@
                 <div class="p-6">
                     <h3 class="text-lg font-medium text-gray-900 mb-4">Quick Actions</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="{{ route('admin.plants.create') }}" class="btn-primary text-center">
-                            Add New Plant
-                        </a>
-                        <a href="{{ route('admin.categories.create') }}" class="btn-secondary text-center">
-                            Add New Category
-                        </a>
-                        <a href="{{ route('admin.orders.index') }}" class="btn-outline text-center">
-                            View All Orders
-                        </a>
-                        @can('create', \App\Models\User::class)
-                        <a href="{{ route('admin.users.create') }}" class="btn-outline text-center">
-                            Add New User
-                        </a>
-                        @endcan
-                    </div>
+    <a href="{{ route('admin.plants.create') }}" class="btn-primary text-center">
+        Add New Plant
+    </a>
+    <a href="{{ route('admin.categories.create') }}" class="btn-secondary text-center">
+        Add New Category
+    </a>
+    <a href="{{ route('admin.orders.index') }}" class="btn-outline text-center">
+        View All Orders
+    </a>
+    <a href="{{ route('admin.categories.index') }}" class="btn-outline text-center">
+        View All Categories
+    </a>
+    <a href="{{ route('admin.users.index') }}" class="btn-outline text-center">
+        View All Users
+    </a>
+    @can('create', \App\Models\User::class)
+    <a href="{{ route('admin.users.create') }}" class="btn-outline text-center">
+        Add New User
+    </a>
+    @endcan
+</div>
+
+
                 </div>
             </div>
 
