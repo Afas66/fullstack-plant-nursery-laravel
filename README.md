@@ -30,6 +30,15 @@ Greenthumb Nursery is a full-stack web application designed to manage the invent
 
 ## DEMO
 <video controls src="public/assets/demo/post.mp4" title="Title"></video>
+## SCREENSHOTS
+<img width="1280" height="694" alt="Screenshot 2025-11-15 at 18 47 16" src="https://github.com/user-attachments/assets/0b5a14e7-2ec4-4dfb-88f4-dc399c52d749" />
+<img width="1280" height="697" alt="Screenshot 2025-11-15 at 18 48 01" src="https://github.com/user-attachments/assets/8d2a2b72-56bb-429d-8a19-b2c08b7962eb" />
+<img width="1280" height="705" alt="Screenshot 2025-11-15 at 18 48 46" src="https://github.com/user-attachments/assets/ba1de188-3c41-4b8f-887d-c8f89844cf28" />
+<img width="1280" height="703" alt="Screenshot 2025-11-15 at 18 49 30" src="https://github.com/user-attachments/assets/0c939125-858d-4b00-aec0-27245fcdea16" />
+<img width="1280" height="707" alt="Screenshot 2025-11-15 at 18 49 58" src="https://github.com/user-attachments/assets/199cfc39-5b2e-4593-9c0a-a2891824dc0f" />
+<img width="1280" height="800" alt="Screenshot 2025-11-15 at 18 50 25" src="https://github.com/user-attachments/assets/73e49671-8f18-4e01-81fd-943f2a5b6ffb" />
+
+
 
 ## 🚀 Getting Started | インストール方法
 
